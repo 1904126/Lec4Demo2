@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="382dp"
+        android:layout_height="743dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homebackground" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="408dp"
+        android:layout_height="449dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:srcCompat="@drawable/eventsframe" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="0dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="279dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="52dp"
+        android:text="TestContView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/popup"
+        android:layout_width="317dp"
+        android:layout_height="280dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="204dp"
+        android:alpha="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/contributerframe" />
+
+    <EditText
+        android:id="@+id/eventNameInput"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/eventNamePrompt"
+        app:layout_constraintTop_toTopOf="@+id/popup" />
+
+    <EditText
+        android:id="@+id/eventTimeInput"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/eventTimePrompt"
+        app:layout_constraintTop_toTopOf="@+id/popup" />
+
+    <TextView
+        android:id="@+id/eventTimePrompt"
+        android:layout_width="99dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        android:text="Event Time"
+        app:layout_constraintStart_toStartOf="@+id/popup"
+        app:layout_constraintTop_toTopOf="@+id/popup" />
+
+    <TextView
+        android:id="@+id/eventLocationPrompt"
+        android:layout_width="99dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="128dp"
+        android:gravity="center"
+        android:text="Event Location"
+        app:layout_constraintStart_toStartOf="@+id/popup"
+        app:layout_constraintTop_toTopOf="@+id/popup" />
+
+    <TextView
+        android:id="@+id/eventDatePrompt"
+        android:layout_width="99dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Event Date"
+        app:layout_constraintStart_toStartOf="@+id/popup"
+        app:layout_constraintTop_toBottomOf="@+id/eventLocationPrompt" />
+
+    <EditText
+        android:id="@+id/eventDateInput"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="152dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/eventLocationPrompt"
+        app:layout_constraintTop_toTopOf="@+id/popup" />
+
+    <EditText
+        android:id="@+id/eventLocationInput"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="116dp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/eventLocationPrompt"
+        app:layout_constraintTop_toTopOf="@+id/popup" />
+
+    <TextView
+        android:id="@+id/eventNamePrompt"
+        android:layout_width="99dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Event Name"
+        app:layout_constraintStart_toStartOf="@+id/popup"
+        app:layout_constraintTop_toTopOf="@+id/popup" />
+
+    <Button
+        android:id="@+id/eventAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="120dp"
+        android:text="Add Event"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/Prompt"
+        android:layout_width="99dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Add Event"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/popup"
+        app:layout_constraintTop_toTopOf="@+id/popup" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#34BEE3"
+        android:text="Cancel "
+        app:layout_constraintEnd_toEndOf="@+id/popup"
+        app:layout_constraintTop_toBottomOf="@+id/eventLocationInput" />
+
+    <Button
+        android:id="@+id/Confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#34BEE3"
+        android:text="confirm"
+        app:layout_constraintStart_toStartOf="@+id/popup"
+        app:layout_constraintTop_toBottomOf="@+id/eventLocationPrompt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
